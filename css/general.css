@@ -26,7 +26,11 @@
   - Tints: 
     #fdf2e9
     #fae5d3
-  - Shades: #cf711f
+    #eb984e
+
+  - Shades: 
+  #cf711f
+  #45260a
   - Accents:
   - Greys:
 
@@ -35,6 +39,8 @@
   #333
 
   -- 05 SHADOWS
+
+  0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
   -- 06 BORDER-RADIUS
 
@@ -143,6 +149,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -154,6 +161,7 @@ body {
   /* Put transition on original "state" */
   /* transition: background-color 0.3s; */
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .btn--full:link,
@@ -217,6 +225,13 @@ body {
   width: 3rem;
   height: 3rem;
   color: #e67e22;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /*  HELPER/SETTINGS CLASS */
